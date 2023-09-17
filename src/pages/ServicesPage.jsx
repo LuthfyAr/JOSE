@@ -1,6 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap";
 import HeroImage from '../assets/cat.png';
-// import {} from 
+import { Services } from '../data/index';
+// import {} from
 
 const ServicesPage = () => {
   return (
@@ -33,7 +34,15 @@ const ServicesPage = () => {
             </Col>
           </Row>
           <Row>
-            <Col></Col>
+            {Services.map((service) =>{
+              return(
+                <Col key={service.id}>
+                  <img src={service.image} alt="" className='w-100 mb-5 rounded-top'/>
+                  <h5 className="mb-5 px-3">{service.title}</h5>
+                  <button className='btn btn-primary rounded-1'>{service.fasilitas}</button>
+                </Col>
+              )
+            })}
           </Row>
         </Container>
       </div>

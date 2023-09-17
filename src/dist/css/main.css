@@ -139,6 +139,20 @@ header {
 .homepage .services .row:nth-child(1) h1,
 .homepage .services .row:nth-child(1) p {
     color: var(--color-text);
+}
 
+.homepage .services .row:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding-inline: 10px;
+}
 
+.homepage .services .row:nth-child(2) .col{
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.homepage .services .row:nth-child(2) img{
+    height: 200px;
 }
