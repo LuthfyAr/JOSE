@@ -2,6 +2,8 @@ import {Container, Row, Col} from "react-bootstrap";
 import HeroImage from '../assets/cat.png';
 import { Services,  dataSwiper} from '../data/index';
 
+import FaqComponents  from '../components/FaqComponents';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -111,6 +113,9 @@ const ServicesPage = () => {
           </Row>
         </Container>
       </div>
+
+  <FaqComponents />
+
     </div>
   )
 }
