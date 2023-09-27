@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import {Navbar, Container, Nav} from 'react-bootstrap';
 
 import {navLinks} from '../data/index';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 const NavbarComponents = () => {
   const [changeColor, setChangeColor] = useState(false);
@@ -40,8 +40,8 @@ const NavbarComponents = () => {
           </Nav>
           
           <div className='text-center'>
-            <button className='btn btn-success rounded-1 me-2'>Sign Up</button>
-            <button className='btn btn-outline-success rounded-1'>Sign Up</button>
+            <Link to='daftar' className='btn btn-success rounded-1 me-2'>Sign Up</Link>
+            <Link to="login" className='btn btn-outline-success rounded-1'>Login</Link>
           </div>
         </Navbar.Collapse>
       </Container>
