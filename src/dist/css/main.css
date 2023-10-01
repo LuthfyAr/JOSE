@@ -172,13 +172,13 @@ header {
     height: 100%;
     padding-bottom: 50px;
   }
-  
+
 .swiper-slide {
     text-align: left;
     font-size: 18px;
     background: #fff;
     padding: 20px;
-  
+
     /* Center slide text vertically */
     display: flex;
     flex-direction: column;
@@ -186,7 +186,7 @@ header {
     align-items: center;
     cursor: grab;
   }
- 
+
 .swiper-slide:active {
     cursor: grabbing;
 }
@@ -261,3 +261,99 @@ header {
 .faq .accordion .accordion-body{
     background-color: #ffffff;
 }
+
+.login .login-box img {
+    width: 100%;
+}
+
+.login .login-box button{
+    background-color: var(--color-text);
+    color: var(--navbar-color);
+}
+
+.login .login-box h2 {
+    text-align: center;
+}
+
+.login .login-box p{
+    margin-top: 2px;
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    .login .login-box {
+        padding-top: 8rem;
+    }
+
+    .login .login-box img {
+        width: 400px;
+        display: block;
+        margin-inline: auto;
+    }
+}
+
+@media screen and(max-width:575px) {
+    .login .login-box h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and(max-width:475px) {
+    .login .login-box h1 {
+        font-size: 2.4rem;
+    }
+
+    .login .login-box p {
+        font-size: 14px;
+    }
+
+    .login .login-box img {
+        width: 300px;
+    }
+}
+
+@media screen and(max-width: 375px) {
+    .login .header-box h1 {
+        font-size: 2rem;
+    }
+
+    .login .header-box p {
+        font-size: 12px;
+    }
+}
+
+
+/* .form-container {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .form-box {
+    max-width: 360px;
+    padding: 30px;
+    box-shadow: rgb(0, 0, 0/16%) 1px 1px 10px;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .form-box .atas {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-box .tengah {
+    margin: -1px 0 -1px 0;
+    border-radius: 0;
+  }
+
+  .form-box .bawah {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .form-container .form-box button{
+    background-color: var(--secondary-color);
+  } */

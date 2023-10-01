@@ -7,7 +7,7 @@ import ServicesImage5 from '../assets/service/PetTransport.png';
 
 import People1 from '../assets/testimonial/people-1.jpg';
 import People2 from '../assets/testimonial/people-2.jpg';
-import People3 from '../assets/testimonial/people-3.jpg'; 
+import People3 from '../assets/testimonial/people-3.jpg';
 
 
 export const navLinks = [{
@@ -185,7 +185,7 @@ export const testimonial = [
       skill: "Web Developer",
     },
   ];
-  
+
   export const dataSwiper = [
     {
       id: 1,

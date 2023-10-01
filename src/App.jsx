@@ -11,8 +11,8 @@ import TestimonialPage from './pages/TestimonialPage';
 import FaqPage from './pages/FaqPage';
 import SymptomsPage from './pages/SymptomsPage';
 import FasilitasPage from './pages/FasilitasPage';
-
-
+import LoginPage from './pages/LoginPage';
+import DaftarPage from './pages/DaftarPage';
 
 
 function App() {
@@ -26,11 +26,14 @@ function App() {
       <Route path='/fasilitas' Component={FasilitasPage} />
       <Route path='/doctor' Component={DoctorPage} />
       <Route path='/testimoni' Component={TestimonialPage} />
+      <Route path='/login' Component={LoginPage}/>
+      <Route path='/daftar' Component={DaftarPage}/>
 
     </Routes>
 
     <FooterComponents/>
+
   </div>;
 }
 
-export default App
+export default App;
