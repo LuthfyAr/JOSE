@@ -10,7 +10,7 @@
     --navabar-color-text: #1111; */
     --primary-color: #f6f8fd;
     --secondary-color: green;
-    --color-text: #231942;
+    --color-text: #000000;
     --navbar-color: #ffff;
     --navabar-color-text: #1111;
 }
@@ -357,3 +357,54 @@ header {
   .form-container .form-box button{
     background-color: var(--secondary-color);
   } */
+
+/* Styling Doctor page */
+.doctor-page {
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+
+}
+
+.doctor-page .row:nth-child(1){
+    padding-top: 200px;
+    padding-top: 100px;
+}
+
+.doctor-page .row:nth-child(1) h1{
+    color: var(--color-text);
+}
+
+.doctor-page .row:nth-child(1) p{
+    color: var(--color-text);
+}
+
+.doctor-page .row:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding-inline: 10px;
+}
+
+.doctor-page .row:nth-child(2) .col{
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.doctor-page .row:nth-child(2) img{
+    height: 200px;
+}
+
+/* Testimonial */
+.testimonial-page .testimonial {
+    background-color: var(--primary-color);
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.testimonial-page .testimonial .row:nth-child(1) h1{
+    color: var(--color-text);
+}
+
+.testimonial-page .testimonial .row:nth-child(1) p {
+    color: var(--color-text);
+}
