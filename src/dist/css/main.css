@@ -408,3 +408,13 @@ header {
 .testimonial-page .testimonial .row:nth-child(1) p {
     color: var(--color-text);
 }
+
+/* style fasilitas service */
+.fasilitas-ditawarkan-page .fasilitas-ditawarkan {
+    padding-top: 150px;
+    background-color: var(--primary-color);
+}
+
+.fasilitas-ditawarkan-page .fasilitas-ditawarkan p {
+    line-height: 2;
+}
