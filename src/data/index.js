@@ -1,8 +1,8 @@
-import ServicesImage1 from '../assets/service/Daycare.png';
+import ServicesImage1 from '../assets/service/Dayacare.png';
 import ServicesImage2 from '../assets/service/Grooming.png';
 import ServicesImage3 from '../assets/service/Healthcare.png';
-import ServicesImage4 from '../assets/service/Hyginiccare.png';
-import ServicesImage5 from '../assets/service/PetTransport.png';
+import ServicesImage4 from '../assets/service/hygine.png';
+import ServicesImage5 from '../assets/service/Pet transport.png';
 // import ServicesImage6 from '../assets/service/Service-6.png';
 
 import People1 from '../assets/testimonial/people-1.jpg';
@@ -117,6 +117,73 @@ export const Services = [{
     //     delay: "400",
     // },
 ];
+
+export const doctors = [
+  {
+    id: 1,
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+    image: People1,
+    name: "Dr. Ratna",
+    skill: "Bedah",
+  },
+  {
+    id: 2,
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+    image: People2,
+    name: "Dr. Joko",
+    skill: "Bedah",
+  },
+  {
+    id: 3,
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+    image: People3,
+    name: "Dr. Kama",
+    skill: "Bedah",
+  },
+  {
+    id: 4,
+    desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+    image: People1,
+    name: "Dr.",
+    skill: "Bedah",
+  },
+  // {
+  //   id: 5,
+  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+  //   image: People2,
+  //   name: "Dr.",
+  //   skill: "Bedah",
+  // },
+  // {
+  //   id: 6,
+  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+  //   image: People3,
+  //   name: "Dr.",
+  //   skill: "Bedah",
+  // },
+  // {
+  //   id: 7,
+  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+  //   image: People1,
+  //   name: "People 7",
+  //   skill: "Bedah",
+  // },
+  // {
+  //   id: 8,
+  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+  //   image: People2,
+  //   name: "People 8",
+  //   skill: "Bedah",
+  // },
+  // {
+  //   id: 9,
+  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+  //   image: People3,
+  //   name: "People 9",
+  //   skill: "Bedah",
+  // },
+];
+
 
 
 

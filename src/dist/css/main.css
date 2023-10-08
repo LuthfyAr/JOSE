@@ -156,6 +156,76 @@ header {
 .homepage .services .row:nth-child(2) img{
     height: 200px;
 }
+
+.homepage .services button{
+    margin-left: 10px;
+}
+
+/* Doctor */
+.doctor-page .doctor{
+    background-color: var(--primary-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.doctor-page .row:nth-child(1){
+    padding-top: 200px;
+    padding-top: 100px;
+}
+
+.doctor-page .row:nth-child(1) h1{
+    color: var(--color-text);
+}
+
+.doctor-page .row:nth-child(1) p{
+    color: var(--color-text);
+}
+
+.doctor-page .row:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding-inline: 10px;
+}
+
+.doctor-page .row:nth-child(2) .col{
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.doctor-page .row:nth-child(2) img{
+    height: 200px;
+}
+
+.doctor-page .doctor .row:nth-child(1){
+    padding-bottom: 100px;
+}
+
+.doctor-page .doctor .row:nth-child(1) p{
+    color: var(--color-text);
+}
+
+.doctor-page .doctor .desc{
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 2;
+}
+
+.doctor-page .doctor .people h5,
+.doctor-page .doctor .people p{
+    color: var(--color-text);
+}
+
+.doctor-page .doctor .people h5{
+    font-weight: 600;
+}
+
+
+.doctor-page .doctor .people img {
+    width: 80px;
+    border-radius: 100%;
+}
+/* doctor */
 /* Testimonial */
 
 .homepage.testimonial {
@@ -359,40 +429,6 @@ header {
   } */
 
 /* Styling Doctor page */
-.doctor-page {
-    background-color: var(--primary-color);
-    padding-bottom: 100px;
-
-}
-
-.doctor-page .row:nth-child(1){
-    padding-top: 200px;
-    padding-top: 100px;
-}
-
-.doctor-page .row:nth-child(1) h1{
-    color: var(--color-text);
-}
-
-.doctor-page .row:nth-child(1) p{
-    color: var(--color-text);
-}
-
-.doctor-page .row:nth-child(2){
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    padding-inline: 10px;
-}
-
-.doctor-page .row:nth-child(2) .col{
-    background-color: #ffffff;
-    padding: 0;
-}
-
-.doctor-page .row:nth-child(2) img{
-    height: 200px;
-}
 
 /* Testimonial */
 .testimonial-page .testimonial {

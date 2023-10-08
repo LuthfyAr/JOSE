@@ -54,7 +54,7 @@ const ServicesPage = () => {
                 <Col key={service.id} className="shadow rounded">
                   <img src={service.image} alt="" className='w-100 mb-5 rounded-top'/>
                   <h5 className="mb-5 px-3">{service.title}</h5>
-                  <button className='btn btn-primary rounded-1'>{service.fasilitas}</button>
+                  <button className='btn btn-primary rounded-1 mb-3'>{service.fasilitas}</button>
                 </Col>
               )
             })}
