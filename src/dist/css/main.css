@@ -332,6 +332,7 @@ header {
     background-color: #ffffff;
 }
 
+/* Login */
 .login .login-box img {
     width: 100%;
 }
@@ -346,6 +347,25 @@ header {
 }
 
 .login .login-box p{
+    margin-top: 2px;
+    text-align: center;
+}
+
+/* Reservasi */
+.reservasi .reservasi-box img {
+    width: 100%;
+}
+
+.reservasi .reservasi-box button{
+    background-color: var(--color-text);
+    color: var(--navbar-color);
+}
+
+.reservasi .reservasi-box h2 {
+    text-align: center;
+}
+
+.reservasi .reservasi-box p{
     margin-top: 2px;
     text-align: center;
 }

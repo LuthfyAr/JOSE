@@ -11,7 +11,7 @@ const DoctorPage = () => {
         <Row>
           <Col>
           <h1 className="fw-bold text-center">Dokter</h1>
-          <p className="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <p className="text-center">Kami memiliki dokter berpengalaman terbaik dibidangnya!
           </p>
           </Col>
         </Row>

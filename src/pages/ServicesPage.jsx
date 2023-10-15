@@ -45,7 +45,7 @@ const ServicesPage = () => {
           <Row>
             <Col>
               <h1 className="text-center fw-bold">Our Services</h1>
-              <p className="text-center ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p className="text-center ">Kami memiliki beberapa layanan menarik diantaranya adalah</p>
             </Col>
           </Row>
           <Row>
