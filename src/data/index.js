@@ -33,8 +33,8 @@ export const navLinks = [{
     },
     {
         id: 5,
-        path: "testimoni",
-        text: "Testimoni",
+        path: "reservasi",
+        text: "Reservasi",
     },
 ];
 

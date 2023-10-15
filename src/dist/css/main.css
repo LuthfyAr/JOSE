@@ -430,20 +430,22 @@ header {
 
 /* Styling Doctor page */
 
-/* Testimonial */
-.testimonial-page .testimonial {
+/* Reservasi */
+.from-page .from {
     background-color: var(--primary-color);
     padding-top: 150px;
     padding-bottom: 100px;
 }
 
-.testimonial-page .testimonial .row:nth-child(1) h1{
+.from-page .from .row:nth-child(1) h1{
     color: var(--color-text);
 }
 
-.testimonial-page .testimonial .row:nth-child(1) p {
+.from-page .from .row:nth-child(1) p {
     color: var(--color-text);
 }
+
+
 
 /* style fasilitas service */
 .fasilitas-ditawarkan-page .fasilitas-ditawarkan {
