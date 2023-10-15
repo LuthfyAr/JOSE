@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const SymptomsPage = () => {
   return (
-<div>
+  <div>
       <div className="fasilitas-ditawarkan-page">
         <div className="fasilitas-ditawarkan min-vh-100">
           <Container>
@@ -26,7 +26,7 @@ const SymptomsPage = () => {
                     </div>
                     <div class="mb-3">
                     <p className="">Deskripsi Gejala</p>
-                        <input  id="deskripsi "type="email" placeholder="Deskripsikan Secara Lengkap Gejala yang dialami" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" />
+                        <input  id="deskripsi "type="text" placeholder="Deskripsikan Secara Lengkap Gejala yang dialami" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" />
                     </div>
                     <br />
                     <div class="d-grid gap-2 mt-2">
@@ -45,7 +45,7 @@ const SymptomsPage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default SymptomsPage
