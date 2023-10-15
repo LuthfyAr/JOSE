@@ -26,7 +26,7 @@ const SymptomsPage = () => {
                     </div>
                     <div class="mb-3">
                     <p className="">Deskripsi Gejala</p>
-                        <input  id="email "type="email" placeholder="Email address" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" />
+                        <input  id="deskripsi "type="email" placeholder="Deskripsikan Secara Lengkap Gejala yang dialami" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" />
                     </div>
                     <br />
                     <div class="d-grid gap-2 mt-2">
