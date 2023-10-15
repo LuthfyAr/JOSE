@@ -1,8 +1,8 @@
-import { Container, Row, Col} from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Container, Row, Col} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const FooterComponents = () => {
-  return <div className='footer'>
+  return <div className='footer py-5'>
     <Container>
       <Row className='d-flex justify-content-between'>
         <Col lg='5'>
@@ -21,19 +21,18 @@ const FooterComponents = () => {
           </Link>
         </div>
         </Col>
-        {/* <Col className='d-flex flex-column col-lg-2 col mt-lg-0 mt-5'>
+        <Col className='d-flex flex-column col-lg-2 col mt-lg-0 mt-5'>
           <h5 className='fw-bold'>Menu</h5>
           <Link to=''>Home</Link>
-          <Link to='kelas'>Kelas</Link>
-          <Link to='testimonial'>Testimonial</Link>
-          <Link to='faq'>FAQ</Link>
-          <Link to='syaratketen'>Syarat & Ketentuan</Link>
+          <Link to='symtomschecker'>Symptoms Checker</Link>
+          <Link to='fasilitas'>Fasilitas</Link>
+          <Link to='reservasi'>Reservasi</Link>
         </Col>
         <Col lg='4' className='mt-lg-0 mt-5'>
           <h5 className='fw-bold mb-3'>Subscribe</h5>
           <div className='subscribe'>
             <input type="text" placeholder='Subscribe...'/>
-            <button className='btn btn-danger rounded-end rounded-0'>Subscribe</button>
+            <button className='btn btn-success rounded-end rounded-0'>Subscribe</button>
           </div>
           <div className='social mt-3'>
             <i className='fa-brands fa-facebook'></i>
@@ -41,7 +40,7 @@ const FooterComponents = () => {
             <i className='fa-brands fa-linkedin'></i>
             <i className='fa-brands fa-youtube'></i>
           </div>
-        </Col> */}
+        </Col>
       </Row>
       <Row>
         <Col>

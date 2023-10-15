@@ -1,7 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap";
 import HeroImage from '../assets/cat.png';
 import { Services,  dataSwiper} from '../data/index';
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 
 import FaqComponents  from '../components/FaqComponents';
@@ -31,7 +31,9 @@ const ServicesPage = () => {
             <p className="mb-2">
               Human canine bonding is the relationship between dogs and humans.
             </p>
-            <button className="btn btn-success btn-lg rounded-1 me-2 text-decoration-none" > <Link to="/daftar" >Daftar Sekarang </Link></button>
+            <div className="button-daftar">
+            <button className="btn btn-success btn-lg rounded-1 me-2 text-decoration-none"> <Link to="/daftar" >Daftar Sekarang </Link></button>
+            </div>
           </Col>
           <Col lg='6'className="pt-lg-0 pt-5" >
           <img src={HeroImage} alt="hero-img"/>
