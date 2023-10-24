@@ -35,10 +35,7 @@ const FooterComponents = () => {
             <button className='btn btn-success rounded-end rounded-0'>Subscribe</button>
           </div>
           <div className='social mt-3'>
-            <i className='fa-brands fa-facebook'></i>
-            <i className='fa-brands fa-twitter'></i>
-            <i className='fa-brands fa-linkedin'></i>
-            <i className='fa-brands fa-youtube'></i>
+          <p>Instagram : @Josevet</p>
           </div>
         </Col>
       </Row>
