@@ -15,9 +15,13 @@ const Users = db.define('users',{
     },
     refresh_token:{
         type: DataTypes.TEXT
+    },
+    role: {
+        type: DataTypes.ENUM('users', 'admin'), // Define possible roles
+        defaultValue: 'users' // Set default role
     }
 },{
     freezeTableName:true
-})
+});
 
 export default Users;

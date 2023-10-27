@@ -1,27 +1,56 @@
-GET http://localhost:5000/users
-###
-POST http://localhost:5000/users
-Content-Type: application/json
+GET http://localhost:5001/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJhcmlxIiwiZW1haWwiOiJhcmlxaGhAZ21haWwuY29tIiwiaWF0IjoxNjk4MTU2MTIyLCJleHAiOjE2OTgxNTYxNDJ9.trhp5W-zTzGmbORo3zVJ46Sf1bbY-PnOlHglQV59SMY
 
+###
+POST  http://localhost:5001/users
 {
-    "name": "lol",
-    "email": "lol@gmail.com",
+    "name": "admin",
+    "email": "admin@gmail.com",
     "password": "123456",
-    "confpassword": "123456"
+    "confpassword": "123456",
+    "role": "admin"
 }
 
 
 ###
-POST http://localhost:5000/login
-Content-Type: application/json
-
+POST http://localhost:5001/login
 {
-    "email": "lol@gmail.com",
+    "email": "ariqhu@gmail.com",
     "password": "123456"
 }
 ###
-GET http://localhost:5000/token
+GET http://localhost:5001/token
 
 ###
 
-DELETE http://localhost:5000/logout
+DELETE http://localhost:5001/logout
+
+###
+
+POST http://localhost:5001/reservation
+Content-Type: application/json
+
+{
+    "name": "Test User",
+    "date": "2023-10-28",
+    "email": "test@example.com",
+    "jenisHewan": "Cat",
+    "whatsapp": "123456789",
+    "tujuan": "Vet Clinic"
+}
+
+###
+
+DELETE http://localhost:5001/reservation/2
+
+###
+GET http://localhost:5001/reservation
+
+###
+POST  http://localhost:5001/
+{
+    "name": "Admin Name",
+    "email": "admin@example.com",
+    "password": "adminpassword",
+    "confPassword": "adminpassword"
+}
