@@ -1,21 +1,22 @@
 GET http://localhost:5001/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJhcmlxIiwiZW1haWwiOiJhcmlxaGhAZ21haWwuY29tIiwiaWF0IjoxNjk4MTU2MTIyLCJleHAiOjE2OTgxNTYxNDJ9.trhp5W-zTzGmbORo3zVJ46Sf1bbY-PnOlHglQV59SMY
-
 ###
 POST  http://localhost:5001/users
+Content-Type: application/json
+
 {
-    "name": "admin",
-    "email": "admin@gmail.com",
+    "name": "ariq",
+    "email": "ariqhuwaidi@gmail.com",
     "password": "123456",
-    "confpassword": "123456",
-    "role": "admin"
+    "confpassword": "1234567",
 }
 
 
 ###
-POST http://localhost:5001/login
+POST  http://localhost:5001/login
+Content-Type: application/json
+
 {
-    "email": "ariqhu@gmail.com",
+    "email": "ariqhuwaidi@gmail.com",
     "password": "123456"
 }
 ###
@@ -54,3 +55,6 @@ POST  http://localhost:5001/
     "password": "adminpassword",
     "confPassword": "adminpassword"
 }
+
+###
+GET http://localhost:5001/localhost:5001/reservation

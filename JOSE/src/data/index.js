@@ -36,6 +36,11 @@ export const navLinks = [{
         path: "reservasi",
         text: "Reservasi",
     },
+    {
+        id: 6,
+        path: "reservation-history",
+        text: "Riwayat Reservasi",
+    },
 ];
 
 export const Services = [{

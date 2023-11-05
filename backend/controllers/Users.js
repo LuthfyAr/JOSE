@@ -3,16 +3,24 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { refreshToken } from "./RefreshToken.js";
 
-export const getUsers = async(req ,res) => {
+export const getUsers = async (req, res) => {
     try {
-        const user = await Users.findAll({
-            attributes: ['id','name', 'email']
+        const userEmail = req.email;
+
+        const user = await Users.findOne({
+            where: {
+                email: userEmail
+            },
+            attributes: ['id', 'name', 'email']
         });
+
         res.json(user);
     } catch (error) {
-        console.log(error);
+        console.error(error);
+        res.status(500).json({ msg: "Internal Server Error" });
     }
 }
+
 export const Register = async (req, res) => {
     const { name, email, password, confPassword } = req.body;
     if (password !== confPassword) return res.status(400).json({ msg: "Password tidak cocok" });
@@ -25,16 +33,16 @@ export const Register = async (req, res) => {
             name: name,
             email: email,
             password: hashPassword,
-            role: 'users' // Assign 'users' role to the user
+            role: 'users'
         });
         res.json({ msg: "Register Berhasil", user });
     } catch (error) {
         console.log(error);
+        res.status(500).json({ msg: "Internal Server Error" });
     }
 }
 
-
-export const Login = async(req, res) => {
+export const Login = async (req, res) => {
     try {
         const user = await Users.findOne({
             where: {
@@ -55,7 +63,7 @@ export const Login = async(req, res) => {
         const userId = user.id;
         const name = user.name;
         const email = user.email;
-        const role = user.role; // Get user's role
+        const role = user.role;
 
         const accessToken = jwt.sign({ userId, name, email, role }, process.env.ACCESS_TOKEN_SECRET, {
             expiresIn: '20s'
@@ -76,17 +84,16 @@ export const Login = async(req, res) => {
             maxAge: 24 * 60 * 60 * 1000
         });
 
-        res.json({ accessToken, role }); // Include role in the response
+        res.json({ accessToken, refreshToken, role });
     } catch (error) {
         console.error(error);
         res.status(500).json({ msg: "Internal Server Error" });
     }
 }
 
-export const Logout = async(req, res) => {
+export const Logout = async (req, res) => {
     const refresh_token = req.cookies.refreshToken;
-    console.log('Refresh Token:', refresh_token); // Add this line for debugging
-    if (!refresh_token) return res.sendStatus(204);
+    if (!refreshToken) return res.sendStatus(204);
 
     try {
         const user = await Users.findOne({

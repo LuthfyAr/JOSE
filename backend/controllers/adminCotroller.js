@@ -18,7 +18,7 @@ export const adminRegister = async (req, res) => {
             name: name,
             email: email,
             password: hashPassword,
-            role: 'admin' // Assign 'admin' role to the admin
+            role: 'admin'
         });
         res.json({ msg: "Admin registered successfully", admin });
     } catch (error) {

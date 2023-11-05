@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useAuth } from "../components/AuthContext";
 import loginImage from "../assets/cat.png";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const ReservasiPage = () => {
@@ -13,6 +14,7 @@ const ReservasiPage = () => {
   const [jenisHewan, setJenisHewan] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [tujuan, setTujuan] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,6 +45,9 @@ const ReservasiPage = () => {
         whatsapp,
         tujuan,
       });
+
+      // history.push("/reservation-list");
+      navigate("/reservation-history");
 
       alert(response.data.message);
     } catch (error) {

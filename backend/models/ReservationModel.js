@@ -1,5 +1,6 @@
 import { Sequelize } from "sequelize";
 import db from "../config/Database.js";
+import Users from "./UserModel.js";
 
 const { DataTypes } = Sequelize;
 
@@ -29,5 +30,7 @@ const Reservation = db.define("reservations", {
     allowNull: false,
   },
 });
+
+Reservation.belongsTo(Users, { foreignKey: 'userId' });
 
 export default Reservation;

@@ -38,6 +38,10 @@ const NavbarComponents = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto text-center">
               {navLinks.map((link) => {
+                // Conditionally render the "Riwayat Reservasi" link based on accessToken
+                if (link.path === "reservation-history" && !accessToken) {
+                  return null; // Skip rendering if not logged in and it's the "Riwayat Reservasi" link
+                }
                 return (
                   <div className="nav-link" key={link.id}>
                     <NavLink

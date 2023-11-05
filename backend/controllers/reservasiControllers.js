@@ -1,6 +1,14 @@
 import Reservation from "../models/ReservationModel.js";
 
-// Controller to handle reservation creation
+export const getReservasi = async (req, res) =>{
+  try {
+    const reservations = await Reservation.findAll(); // Assuming Reservation is your Sequelize model
+    res.json(reservations);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'An error occurred while fetching reservations' });
+  }
+}
 export const createReservation = async (req, res) => {
   const { name, date, email, jenisHewan, whatsapp, tujuan } = req.body;
 
