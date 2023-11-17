@@ -9,6 +9,10 @@ import People1 from '../assets/testimonial/people-1.jpg';
 import People2 from '../assets/testimonial/people-2.jpg';
 import People3 from '../assets/testimonial/people-3.jpg';
 
+import Dokter1 from '../assets/dokter/drh_ratna.png'
+import Dokter2 from '../assets/dokter/drh_windi.png'
+import Dokter3 from '../assets/dokter/drh_kama.png'
+
 
 export const navLinks = [{
         id: 1,
@@ -127,126 +131,65 @@ export const doctors = [
   {
     id: 1,
     desc: "",
-    image: People1,
-    name: "Dr. Ratna",
+    image: Dokter1,
+    name: "Drh. Ratna",
     skill: "Bedah",
   },
   {
     id: 2,
     desc: "",
-    image: People2,
-    name: "Dr. Joko",
+    image: Dokter2,
+    name: "Drh. Windi",
     skill: "Bedah",
   },
   {
     id: 3,
     desc: "",
-    image: People3,
-    name: "Dr. Kama",
+    image: Dokter3,
+    name: "Drh. Kama",
     skill: "Bedah",
   },
-  {
-    id: 4,
-    desc: "",
-    image: People1,
-    name: "Dr.Andi",
-    skill: "Bedah",
-  },
-  {
-    id: 5,
-    desc: "",
-    image: People3,
-    name: "Dr.Tika",
-    skill: "Bedah",
-  },
-  {
-    id: 6,
-    desc: "",
-    image: People2,
-    name: "Dr.Sinta",
-    skill: "Bedah",
-  },
-  // {
-  //   id: 5,
-  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
-  //   image: People2,
-  //   name: "Dr.",
-  //   skill: "Bedah",
-  // },
-  // {
-  //   id: 6,
-  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
-  //   image: People3,
-  //   name: "Dr.",
-  //   skill: "Bedah",
-  // },
-  // {
-  //   id: 7,
-  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
-  //   image: People1,
-  //   name: "People 7",
-  //   skill: "Bedah",
-  // },
-  // {
-  //   id: 8,
-  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
-  //   image: People2,
-  //   name: "People 8",
-  //   skill: "Bedah",
-  // },
-  // {
-  //   id: 9,
-  //   desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
-  //   image: People3,
-  //   name: "People 9",
-  //   skill: "Bedah",
-  // },
-];
-
-
-
-
-
+]
 
 export const testimonial = [
     {
       id: 1,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "mampir ke pet shop deket rumah buat beli keperluan cimol. hari ini resmi jadi babu 😀 dan udah nyobain ke kliniknya juga pelayanannya oke, dokternya dan susternya juga baik2 😁💗 lengkap bgt ada pet shop, pet hotel, pet klinik, dll",
       image: People1,
       name: "People 1",
       skill: "UI UX Designer",
     },
     {
       id: 2,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Clinik hewan terbaik versi saya di kota balikpapan.t4 nya bersih,wangi dan nyaman.ada cat &dog food juga di pet shopnya yg bersebelahan dgn cliniknya.hotel hewan dan grooming tersedia juga",
       image: People2,
       name: "People 2",
       skill: "Flutter Developer",
     },
     {
       id: 3,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Saya sangat menyukai pelayanannya..vet clinic n hotel so clean...profesional and the price is not affordable",
       image: People3,
       name: "People 3",
       skill: "Web Developer",
     },
     {
       id: 4,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Alhamdulillah puas bgt, ramah n nyaman baik sm customer maupun sm anabulnya",
       image: People1,
       name: "People 4",
       skill: "UI UX Designer",
     },
     {
       id: 5,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Pet shop andalan di Balikpapan. Pelayanan ramah, terpercaya untuk titip anabul. Sudah pake jasa di Jose hampir 10 tahun",
       image: People2,
       name: "People 5",
       skill: "Flutter Developer",
     },
     {
       id: 6,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Tempatnya bersih dan rapi dan pegawainya supel jadi bikin nyaman, ada ruang tunggu.",
       image: People3,
       name: "People 6",
       skill: "Web Developer",
@@ -277,42 +220,42 @@ export const testimonial = [
   export const dataSwiper = [
     {
       id: 1,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "mampir ke pet shop deket rumah buat beli keperluan cimol. hari ini resmi jadi babu 😀 dan udah nyobain ke kliniknya juga pelayanannya oke, dokternya dan susternya juga baik2 😁💗 lengkap bgt ada pet shop, pet hotel, pet klinik, dll",
       image: People1,
       name: "People 1",
       skill: "UI UX Designer",
     },
     {
       id: 2,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Clinik hewan terbaik versi saya di kota balikpapan.t4 nya bersih,wangi dan nyaman.ada cat &dog food juga di pet shopnya yg bersebelahan dgn cliniknya.hotel hewan dan grooming tersedia juga",
       image: People2,
       name: "People 2",
       skill: "Flutter Developer",
     },
     {
       id: 3,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Saya sangat menyukai pelayanannya..vet clinic n hotel so clean...profesional and the price is not affordable",
       image: People3,
       name: "People 3",
       skill: "Web Developer",
     },
     {
       id: 4,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Alhamdulillah puas bgt, ramah n nyaman baik sm customer maupun sm anabulnya",
       image: People1,
       name: "People 4",
       skill: "UI UX Designer",
     },
     {
       id: 5,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Pet shop andalan di Balikpapan. Pelayanan ramah, terpercaya untuk titip anabul. Sudah pake jasa di Jose hampir 10 tahun",
       image: People2,
       name: "People 5",
       skill: "Flutter Developer",
     },
     {
       id: 6,
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+      desc: "Tempatnya bersih dan rapi dan pegawainya supel jadi bikin nyaman, ada ruang tunggu.",
       image: People3,
       name: "People 6",
       skill: "Web Developer",

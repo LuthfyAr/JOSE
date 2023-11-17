@@ -4,7 +4,6 @@ import bcrypt from "bcrypt";
 export const adminRegister = async (req, res) => {
     const { name, email, password, confPassword } = req.body;
 
-    // Add validation logic for admin registration if needed
 
     if (password !== confPassword) {
         return res.status(400).json({ msg: "Password tidak cocok" });

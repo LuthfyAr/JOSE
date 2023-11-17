@@ -2,7 +2,7 @@ import Reservation from "../models/ReservationModel.js";
 
 export const getReservasi = async (req, res) =>{
   try {
-    const reservations = await Reservation.findAll(); // Assuming Reservation is your Sequelize model
+    const reservations = await Reservation.findAll();
     res.json(reservations);
   } catch (error) {
     console.error(error);
@@ -30,21 +30,4 @@ export const createReservation = async (req, res) => {
   }
 };
 
-export const deleteReservation = async (req, res) => {
-    const { id } = req.params;
-
-    try {
-      const reservation = await Reservation.findByPk(id);
-
-      if (!reservation) {
-        return res.status(404).json({ message: 'Reservation not found' });
-      }
-
-      await reservation.destroy();
-      res.json({ message: 'Reservation deleted successfully' });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ message: 'An error occurred while deleting the reservation' });
-    }
-  };
 

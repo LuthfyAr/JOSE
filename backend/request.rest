@@ -1,4 +1,5 @@
 GET http://localhost:5001/users
+
 ###
 POST  http://localhost:5001/users
 Content-Type: application/json
@@ -16,7 +17,7 @@ POST  http://localhost:5001/login
 Content-Type: application/json
 
 {
-    "email": "ariqhuwaidi@gmail.com",
+    "email": "ariq@gmail.com",
     "password": "123456"
 }
 ###
@@ -48,7 +49,7 @@ DELETE http://localhost:5001/reservation/2
 GET http://localhost:5001/reservation
 
 ###
-POST  http://localhost:5001/
+POST  http://localhost:5001/adminRegister
 {
     "name": "Admin Name",
     "email": "admin@example.com",

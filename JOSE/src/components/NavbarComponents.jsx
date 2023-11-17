@@ -6,7 +6,7 @@ import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 
 const NavbarComponents = () => {
-  const { accessToken, logout } = useAuth(); // Ambil accessToken dan logout dari konteks
+  const { accessToken, role, logout } = useAuth(); // Ambil accessToken dan logout dari konteks
 
   const handleLogout = () => {
     logout();
@@ -34,13 +34,11 @@ const NavbarComponents = () => {
           <Navbar.Brand href="#home" className="fs-3 fw-bold">
             Jose Vet
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto text-center">
               {navLinks.map((link) => {
-                // Conditionally render the "Riwayat Reservasi" link based on accessToken
-                if (link.path === "reservation-history" && !accessToken) {
-                  return null; // Skip rendering if not logged in and it's the "Riwayat Reservasi" link
+                if (link.path === "reservation-history" && role !== "admin") {
+                  return null;
                 }
                 return (
                   <div className="nav-link" key={link.id}>
@@ -57,7 +55,6 @@ const NavbarComponents = () => {
                 );
               })}
             </Nav>
-
             <div className="text-center">
               {accessToken ? (
                 <button

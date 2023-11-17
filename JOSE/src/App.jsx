@@ -13,7 +13,6 @@ import LoginPage from "./pages/LoginPage";
 import DaftarPage from "./pages/DaftarPage";
 import ReservasiPage from "./pages/ReservasiPage";
 import { AuthProvider } from "./components/AuthContext";
-import ReservationList from "./pages/ReservationList";
 import ReservationHistory from "./pages/ReservasiHistory";
 
 function App() {
@@ -31,7 +30,6 @@ function App() {
           <Route path="/reservasi" Component={ReservasiPage} />
           <Route path="/login" Component={LoginPage} />
           <Route path="/daftar" Component={DaftarPage} />
-          <Route path="/reservation-list" Component={ReservationList} />
           <Route path="/reservation-history" Component={ReservationHistory} />
         </Routes>
 

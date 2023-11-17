@@ -3,24 +3,6 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { refreshToken } from "./RefreshToken.js";
 
-export const getUsers = async (req, res) => {
-    try {
-        const userEmail = req.email;
-
-        const user = await Users.findOne({
-            where: {
-                email: userEmail
-            },
-            attributes: ['id', 'name', 'email']
-        });
-
-        res.json(user);
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ msg: "Internal Server Error" });
-    }
-}
-
 export const Register = async (req, res) => {
     const { name, email, password, confPassword } = req.body;
     if (password !== confPassword) return res.status(400).json({ msg: "Password tidak cocok" });
@@ -66,7 +48,7 @@ export const Login = async (req, res) => {
         const role = user.role;
 
         const accessToken = jwt.sign({ userId, name, email, role }, process.env.ACCESS_TOKEN_SECRET, {
-            expiresIn: '20s'
+            expiresIn: '1d'
         });
 
         const refreshToken = jwt.sign({ userId, name, email, role }, process.env.REFRESH_TOKEN_SECRET, {

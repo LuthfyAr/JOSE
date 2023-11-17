@@ -5,7 +5,7 @@ const ReservationHistory = () => {
   const [reservations, setReservation] = useState([]);
 
   useEffect(() => {
-    const token = localStorage.getItem("accessToken"); // Assuming you store the token in local storage
+    const token = localStorage.getItem("accessToken");
     if (!token) {
       console.error("User not logged in");
       return;

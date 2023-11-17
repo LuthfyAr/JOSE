@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import jwtDecode from "jwt-decode";
+import { useAuth } from "../components/AuthContext";
 
 import FaqComponents from "../components/FaqComponents";
 
@@ -19,6 +20,8 @@ import { Pagination } from "swiper/modules";
 // import {} from
 
 const ServicesPage = () => {
+  const { accessToken } = useAuth();
+
   return (
     <div className="homepage">
       <header className="w100 min-vh-100 d-flex align-items-center">
@@ -34,10 +37,12 @@ const ServicesPage = () => {
                 humans.
               </p>
               <div className="button-daftar">
-                <button className="btn btn-success btn-lg rounded-1 me-2 text-decoration-none">
-                  {" "}
-                  <Link to="/daftar">Daftar Sekarang </Link>
-                </button>
+                {/* Tombol "Daftar Sekarang" akan disembunyikan jika pengguna sudah login */}
+                {!accessToken ? (
+                  <button className="btn btn-success btn-lg rounded-1 me-2 text-decoration-none">
+                    <Link to="/daftar">Daftar Sekarang </Link>
+                  </button>
+                ) : null}
               </div>
             </Col>
             <Col lg="6" className="pt-lg-0 pt-5">
@@ -67,9 +72,6 @@ const ServicesPage = () => {
                     className="w-100 mb-5 rounded-top"
                   />
                   <h5 className="mb-5 px-3">{service.title}</h5>
-                  <button className="btn btn-primary rounded-1 mb-3">
-                    {service.fasilitas}
-                  </button>
                 </Col>
               );
             })}
@@ -116,13 +118,6 @@ const ServicesPage = () => {
                 return (
                   <SwiperSlide key={data.id} className="shadow-sm">
                     <p className="desc">{data.desc}</p>
-                    <div className="people">
-                      <img src={data.image} alt="" />
-                      <div>
-                        <h5 className="mb-1">{data.name}</h5>
-                        <p className="m-0 fw-bold">{data.skill}</p>
-                      </div>
-                    </div>
                   </SwiperSlide>
                 );
               })}
